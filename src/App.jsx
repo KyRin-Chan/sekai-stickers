@@ -169,7 +169,7 @@ function App() {
   return (
     <div className="App">
       <Info open={infoOpen} handleClose={handleClose} config={config} />
-      {!bannerView && (
+      {/* {!bannerView && (
         <div className="bannercontainer">
           <div className="bannermessage">
             <p>New Sekai Stickers mobile app is coming soon</p>
@@ -196,9 +196,9 @@ function App() {
             </button>
           </div>
         </div>
-      )}
+      )} */}
       <div className="counter">
-        Total Stickers you made: {config?.total || "Not available"}
+        已发电量: {config?.total || "Not available"}
       </div>
       <div className="container">
         <div className="vertical">
@@ -234,7 +234,7 @@ function App() {
           />
           <div className="settings">
             <div>
-              <label>Rotate: </label>
+              <label>仰转: </label>
               <Slider
                 value={rotate}
                 onChange={(e, v) => setRotate(v)}
@@ -247,7 +247,7 @@ function App() {
             </div>
             <div>
               <label>
-                <nobr>Font size: </nobr>
+                <nobr>大小: </nobr>
               </label>
               <Slider
                 value={fontSize}
@@ -261,7 +261,7 @@ function App() {
             </div>
             <div>
               <label>
-                <nobr>Spacing: </nobr>
+                <nobr>间距: </nobr>
               </label>
               <Slider
                 value={spaceSize}
@@ -274,7 +274,7 @@ function App() {
               />
             </div>
             <div>
-              <label>Curve (Beta): </label>
+              <label>弧线 (Beta): </label>
               <Switch
                 checked={curve}
                 onChange={(e) => setCurve(e.target.checked)}
@@ -298,16 +298,16 @@ function App() {
           </div>
           <div className="buttons">
             <Button color="secondary" onClick={copy}>
-              copy
+              复制至剪贴板
             </Button>
             <Button color="secondary" onClick={download}>
-              download
+              下载源文件
             </Button>
           </div>
         </div>
         <div className="footer">
           <Button color="secondary" onClick={handleClickOpen}>
-            Info
+            附加信息
           </Button>
         </div>
       </div>
