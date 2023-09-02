@@ -198,7 +198,7 @@ function App() {
         </div>
       )} */}
       <div className="counter">
-        已发电量: {config?.total || "Not available"}
+        已发电量: {config?.total || "没计量"}
       </div>
       <div className="container">
         <div className="vertical">

@@ -6,10 +6,10 @@ body {
 
 @font-face {
   font-family: 'YurukaStd';
-  src: local('YurukaStd'), url(./fonts/YurukaStd.woff2) format('woff2');
+  src: local('YurukaStd'), url(https://hk416.cf/YurukaStd.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'SSFangTangTi';
-  src: local('SSFangTangTi'), url(./fonts/ShangShouFangTangTi.woff2) format('woff2');
+  src: local('SSFangTangTi'), url(https://hk416.cf/ShangShouFangTangTi.woff2) format('woff2');
 }
